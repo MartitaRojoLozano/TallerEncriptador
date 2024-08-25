@@ -1,0 +1,191 @@
+:root {
+
+    --dark-blue-100: #609ED4 ;    
+    --dark-blue-200: #356EA9 ;
+    --dark-blue-300: #0A3871 ;
+    --dark-blue-400: #072B61 ;
+    --dark-blue-500: #052051 ;
+
+    --light-blue-100: #F3F5FC ;    
+    --light-blue-200: #EFF1FA ;
+    --light-blue-300: #E9ECF8 ;
+    --light-blue-400: #AAB2D5 ;
+    --light-blue-500: #757FB2 ;
+
+    --Gray-100: #CED4DA ;
+    --Gray-200: #ADB5BD ;
+    --Gray-300: #868E96 ;
+    --Gray-400: #495057 ;
+    --Gray-500: #343A40 ;
+
+    --white: #FFFFFF ;
+    --black: #000000; 
+
+    --inter-font: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-blue-100);
+    font-family: var(--inter-font);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.seccionLogo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 5%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.textoIngreso{
+    /*
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    */
+    border: none;
+    color: var(--dark-blue-300);
+    margin-top: 80px;
+    text-transform: lowercase;
+
+    /*
+
+    font-family: var(--inter-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    background-color: var(--light-blue-100);*/
+
+    
+    
+    
+    
+}
+::placeholder { color: var(--gray-200); }
+.textoIngreso:focus{ outline:none;}
+
+.textoSalida{
+    background: var(--white);
+    /* background-image: url("/asset/Muneco.png"); */
+    background-repeat: no-repeat ;
+    border: none;
+    border-radius: 24px;
+    color: var(--dark-blue-300);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-left: 20px;
+    position: fixed;
+    background-color: var(--white);
+}
+.textoSalida:focus{ outline:none;}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-encriptar{
+    background: var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+
+    height: 67px;
+    width: 328px;
+}
+
+.btn-desencriptar{
+    background: var(--Gray-100);
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    color: var(--dark-blue-300);
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 30px;
+    
+    height: 67px;
+    width: 328px;
+    
+}
+
+.btn-copiar{
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    color:#0A3871;
+    cursor: pointer;
+
+    height: 67px;
+    width: 328px;
+
+    margin-left: 128px;
+    margin-top: 638px;
+    position: absolute;
+    font-size: 2rem;
+}
+
+.informacion{
+    background-image: url("/asset/alerta.png") ;
+    background-repeat: no-repeat;
+    color: #495057;
+    padding: 2%;
+    font-size: 1.5rem;
+}
+
+.textoMensaje1{
+    font-family: var(--inter-font);
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--Gray-500);
+    margin: 2px;
+    text-align: center;
+}
+
+.textoMensaje2{
+    font-family: var(--inter-font);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Gray-400);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    .submit__container {
+      justify-content: center;
+    }
+    .result {
+      height: auto;
+      max-width: 624px;
+      margin-top: 2rem;
+      min-height: 186px;
+    }
+    .result__img {
+      display: none;
+    }
+    header img {
+      width: 73px;
+    }
+  }
